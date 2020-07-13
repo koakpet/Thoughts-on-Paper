@@ -1,18 +1,43 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css" type="text/css"/>
-    </head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>My Personal Study Journal</title>
 
-    <body>
-    	<div class="container">
-			<img src="akpet.jpg">
-			<div class="text">
-				<h3>Mr. Akpet</h3>
-	        		<p>The is just to show putting a text on an image, whilst changing the image opacity.</p>
-	        		<p>Here the image opacity was changed to 0.5 which didn't affect the text at all, and the text that in the original flow of the document is usually under the image has been repositioned to 30px above the bottom of the image and also 30px away from the left end of the image </p>
-				<p><i><b>PS;</b> the text background opacity of 0.8 was also added to the text background, for aesthetics sake</i></p>
-			</div>    		
-    	</div>
-    </body>
+		<!-- include jquery library and our stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/css/styles.css"/>
+	</head>
 
+	<body>
+		<!-- Navigation Bar for the website -->	
+		<nav>
+			<ul class="navbar">
+				<button></button>
+				<li><a href="#">Home</a></li>
+				<li><a href="pages/blog.html">Blog</a></li>
+				<li><a href="pages/about.html">About</a></li>
+				<li><a href="pages/projects.html">Portfolio</a></li>
+			</ul>
+		</nav>
+
+		<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+		<script type="text/javascript">
+			/* only execute this script when the document is ready */
+			$(document).ready(function(){
+			  /* function called when you click of the button */
+			  $("button").click(function(){
+			      
+			      /* this if else to change the text in the button */
+			      if($("button").text() == "☰"){
+			       $("button").text("X");
+			      }else{
+			        $("button").text("☰");
+			      }
+			    
+			    /* this function toggle the visibility of our "li" elements */
+			    $("li").toggle("slow");
+			  });
+			});
+		</script>
+	</body>
 </html>
