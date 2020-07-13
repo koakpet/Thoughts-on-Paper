@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+nav {
+	width: 100vw; /* defines the width of the navigation to 100% of the viewport width */
+	padding: 0;
+	margin: 0;
+}
+ul {
+	display: flex; /* this rule by default dispose the elements in a row (flex-direction: row) */
+}
+li {
+	list-style-type: none;
+	font-size: 3vh;
+}
+.navbar a {
+	text-decoration: none;
+	padding: 0.5vw;
+	color: black;
+	display: block;
+	/*font-family: ; */
+}
+a:hover {
+	background-color: blue;
+	color: white;
+}
+button {
+	display: none;
+}
+
+@media only screen and (max-width: 720px) {
+	nav {
+		padding: 0;
+		margin: 0;
+	}
+	ul {
+		flex-direction: column; /* this changes the direction of the display of your menu list from horizontal in desktop view to columns in mobile view */
+	}
+	li {
+		margin: 0;
+	}
+	.navbar a {
+		display: block;
+	}
+	button {
+		display: block;
+		width: 9vw;
+		height: 5vh;
+		padding: 2vw;
+		font-size: 3vh;
+		outline: none; /* this removes the default blue outline that appears whenever you click the button */
+		cursor: pointer;
+		align-self: flex-start;
+	}
+}
