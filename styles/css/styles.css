@@ -67,13 +67,13 @@ nav { /* rules defining the contianing element for the navgiation bar */
 		cursor: pointer;
 		margin: 6px 6px;
 		font-size: 4vw;
-
 	}
 
 	.nav_list {
 		margin: 0;
 		padding: 0;
 		flex-direction: column;
+		display: none; /* this hides the menu list so it doesn't load till the menu button has been clicked */
 	}
 	.nav_list li {
 		list-style-type: none; 		/* removes the list style, the bullet indicators that identify an unordered list */
