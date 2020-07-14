@@ -23,22 +23,14 @@
 
 		
 
-		<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+		<!-- JavaScript for the website -->
+		<script src="https://code.jquery.com/jquery-3.4.0.js"></script> 
 		<script type="text/javascript">
 			/* only execute this script when the document is ready */
 			$(document).ready(function(){
 			  /* function called when you click of the button */
-			  $("button").click(function(){
-			      
-			      /* this if else to change the text in the button */
-			      if($("button").text() == "☰"){
-			       $("button").text("X");
-			      }else{
-			        $("button").text("☰");
-			      }
-			    
-			    /* this function toggle the visibility of our "li" elements */
-			    $("li").toggle("slow");
+			  $("button").click(function(){ /* for the html element "button", when clicked it should... */
+			    $("ul").toggle("slow"); /* toggle (bring all the li elements slowly */
 			  });
 			});
 		</script>
