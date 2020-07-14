@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>My Personal Study Journal</title>
+
+		<!-- include jquery library and our stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/css/styles.css"/>
+		<script src="https://use.fontawesome.com/e326876174.js"></script>
+	</head>
+
+	<body>
+		<!-- Navigation Bar for the website -->	
+		<nav>
+			<button class="nav_button"><i class="fa fa-bars"></i></button>
+			<ul class="nav_list">
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="pages/blog.html">Blog</a></li>
+				<li><a href="pages/about.html">About</a></li>
+				<li><a href="pages/portfolio.html">Portfolio</a></li>
+			</ul>
+		</nav>
+
+		
+
+		<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+		<script type="text/javascript">
+			/* only execute this script when the document is ready */
+			$(document).ready(function(){
+			  /* function called when you click of the button */
+			  $("button").click(function(){
+			      
+			      /* this if else to change the text in the button */
+			      if($("button").text() == "☰"){
+			       $("button").text("X");
+			      }else{
+			        $("button").text("☰");
+			      }
+			    
+			    /* this function toggle the visibility of our "li" elements */
+			    $("li").toggle("slow");
+			  });
+			});
+		</script>
+	</body>
+</html>

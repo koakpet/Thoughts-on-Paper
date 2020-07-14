@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+body { /* this defines the base of the whole page, width, font etc */
+	margin: auto;
+	padding: 0;
+	width: 70%;
+	border: 1px gray solid;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Rules styling the navigation bar */
+nav { /* rules defining the contianing element for the navgiation bar */
+	width: 100%;				/* for the nav-bar to take up 100% of the body of the page in desktop veiw */
+	background-color: #A9A9A9; 
+	margin: 0; 					/* to reset the margin of the nav-bar to zero (0) */
+	padding: 0; 				/* to reset the padding of the nav-bar to zero (0) */
+}
+
+.nav_button { /* this hides the toggle button that was created when in desktop view */
+	display: none;
+}
+
+.nav_list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.nav_list li {
+	list-style-type: none; 		/* removes the list style, the bullet indicators that identify an unordered list */
+	margin: 0 1vw;				/* set the margin for top-buttom and left-right of the list */
+	font-size: 3vh;				/* to set the font size of the nav-bar */
+}
+
+.nav_list a {
+	text-decoration: none;		/* removes the line under the text */
+	color: #000000;
+	padding: 1.1vw;
+	display: block;
+}
+
+.nav_list a:hover {
+	background-color: #FFF8DC;
+}
+
+
+/* CSS RULES FOR SCREENS WITH WIDTH LESS THAN 768PX (MOBILE DEVICES) */
+@media only screen and (max-width: 768px) {
+	body { /* this defines the base of the whole page, width, font etc */
+		margin: auto;
+		padding: 0;
+		width: 100%;
+		border: 1px gray solid;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Rules styling the navigation bar */
+	nav { /* rules defining the contianing element for the navgiation bar */
+		width: 100%;				/* for the nav-bar to take up 100% of the body of the page in desktop veiw */
+		background-color: #A9A9A9; 
+		margin: 0; 					/* to reset the margin of the nav-bar to zero (0) */
+		padding: 0; 				/* to reset the padding of the nav-bar to zero (0) */
+	}
+
+	.nav_button { /* displays the navigation toggle button when it is in mobile view */
+		display: block;
+		cursor: pointer;
+		margin: 6px 6px;
+		font-size: 4vw;
+
+	}
+
+	.nav_list {
+		margin: 0;
+		padding: 0;
+		flex-direction: column;
+	}
+	.nav_list li {
+		list-style-type: none; 		/* removes the list style, the bullet indicators that identify an unordered list */
+		margin: 0 1vw;				/* set the margin for top-buttom and left-right of the list */
+		font-size: 3vh;				/* to set the font size of the nav-bar */
+	}
+
+	.nav_list a {
+		text-decoration: none;		/* removes the line under the text */
+		color: #000000;
+		padding: 1.1vw;
+		display: block;
+	}
+
+	.nav_list a:hover {
+		background-color: #FFF8DC;
+	}
+}
